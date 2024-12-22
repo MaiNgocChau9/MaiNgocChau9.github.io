@@ -1,100 +1,169 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Good Mood - Khám Phá Kho Tàng Trò Chơi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/index.css">
-</head>
+    <title>Portfolio</title>
+    <!--! Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./access/logo.jpg" type="image/x-icon" >
+</head> 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-stars brand-icon"></i>
-                Good Mood
-            </a>
-            <div class="d-flex">
-                <button class="btn btn-login">Đăng nhập</button>
-                <button class="btn btn-register">Đăng ký</button>
-            </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="logo">
+            <img src="./access/logo.jpg" alt="logo">
+            <a class="navbar-brand" href="./index.html" style="font-weight: bold;">Portfolio</a>
         </div>
-    </nav>
-
-    <main>
-        <section class="hero">
-            <div class="container text-center">
-                <h1>Khám phá <span>Kho Tàng Trò Chơi</span></h1>
-                <p class="hero-text">
-                    Từ những trò chơi dân gian đến game hiện đại, Good Mood là cầu nối giúp bạn
-                    tìm kiếm và khám phá niềm vui trong mọi thể loại trò chơi
-                </p>
-
-                <form class="search-form">
-                    <div class="search-wrapper">
-                        <input type="text" placeholder="Nhập tên trò chơi bạn muốn tìm...">
-                        <button type="submit">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Dự án</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/view.html">Blog</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+      
+      <!--! Content -->
+      <main>
+        <!--! Go to top -->
+        <a href="#start" class="go-top-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+          </svg>
+        </a>
+        
+        <!--! Trang chủ  !-->
+        <div class="start" id="start">
+            <div class="title">
+              <h1>Xin chào!<br><span id="first_span">Tôi</span> là <span id="second_span">Mai Ngọc Châu</span></h1>
+              <p>Tôi là một người đam mê lập trình và luôn sẵn sàng đón nhận thử thách mới 💻✨</p>
+              <div class="fast-link">
+                <a class="secondary-button" href="#projects">Các dự án của tôi 😎</a>
+                <a class="primary-button" href="#">Xem thêm</a>
+              </div>
             </div>
-        </section>
+            <div class="minh_hoa"><img src="./access/logo.svg" alt=""></div>
+        </div>
 
-        <section class="categories">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="category-card">
-                            <div class="icon-wrapper">
-                                <i class="bi bi-book"></i>
-                            </div>
-                            <h3>Trò Chơi Dân Gian</h3>
-                            <p>Khám phá những trò chơi truyền thống được yêu thích qua nhiều thế hệ</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card">
-                            <div class="icon-wrapper">
-                                <i class="bi bi-people"></i>
-                            </div>
-                            <h3>Trò Chơi Nhóm</h3>
-                            <p>Tụ họp bạn bè và gia đình với các trò chơi tương tác đa dạng</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card">
-                            <div class="icon-wrapper">
-                                <i class="bi bi-controller"></i>
-                            </div>
-                            <h3>Game Hiện Đại</h3>
-                            <p>Khám phá thế giới game đa nền tảng với nhiều thể loại khác nhau</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-card">
-                            <div class="icon-wrapper">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-                            <h3>Trò Chơi Giáo Dục</h3>
-                            <p>Học thông qua vui chơi với bộ sưu tập trò chơi bổ ích</p>
-                        </div>
-                    </div>
+        <!--! Giới thiệu  !-->
+        <div id="about" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <div class="container about">
+            <div class="about-title">
+              <h1>Giới thiệu về tôi</h1>
+              <p>Khám phá về tôi qua 4 phần dưới đây.</p>
+            </div>
+            <div class="box">
+              <div class="box-item">
+                <h4>1. Yêu thích lập trình</h4>
+                <p>Tôi đam mê lập trình, thích thú với việc tạo ra các giải pháp phần mềm sáng tạo và luôn khám phá các công nghệ mới để cải thiện kỹ năng của mình.</p>
+              </div>
+              <div class="box-item">
+                <h4>2. Thành thạo Python và C++</h4>
+                <p>Tôi là một học sinh nhưng đã có nền tảng vững chắc trong cả Python và C++, thường xuyên sử dụng chúng để giải quyết các bài toán lập trình và xây dựng các dự án cá nhân.</p>
+              </div>
+              <div class="box-item">
+                <h4>3. Sáng tạo và học hỏi không ngừng</h4>
+                <p>Mỗi dự án tôi làm đều là một cơ hội để sáng tạo và học hỏi thêm. Tôi luôn tìm cách kết hợp các ý tưởng mới vào lập trình để tạo ra các sản phẩm thú vị và hữu ích.</p>
+              </div>
+              <div class="box-item">
+                <h4>4. Đam mê chia sẻ và học tập</h4>
+                <p>Tôi thích tham gia vào các cuộc thi và hoạt động sáng tạo trong lĩnh vực công nghệ, không chỉ để thử thách bản thân mà còn để chia sẻ kiến thức và niềm đam mê của mình với bạn bè.</p>
+              </div>
+            </div>
+          </div>
+        </div style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+        <!--! Dự án -->
+        <div>
+          <div class="container" id="projects" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+            <h1 style="text-align: center; margin: 30px 0; font-weight: bold;">Các dự án</h1>
+            <div class="repo-container" id="repo-container"></div>
+          </div>
+        </div>
+
+        <!--! Liên hệ -->
+        <div class="contact col-md-6 form-container p-5" id="contact">
+          <h1 style="text-align: center; margin: 30px 0; font-weight: bold;">Liên hệ</h1>
+          <p class="text-center text-muted mb-5">Bạn có thể liên hệ với chúng tôi bất cứ lúc nào</p>
+          <form action="https://formsubmit.co/chauaurora9@gmail.com" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Họ và tên" placeholder="Họ và tên" required>
                 </div>
-            </div>
-        </section>
-
-        <section class="cta">
-            <div class="container text-center">
-                <h2>Bắt đầu hành trình khám phá ngay</h2>
-                <p>Tham gia cộng đồng Good Mood để chia sẻ và tìm kiếm những trò chơi thú vị</p>
-                <button class="btn btn-cta">Tham gia ngay</button>
-            </div>
-        </section>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="Email" placeholder="Địa chỉ email của bạn" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" name="Nội dung" placeholder="Chúng tôi có thể giúp gì cho bạn?" rows="4" required></textarea>
+                </div>
+                <input type="hidden" name="_next" value="https://maingocchau9.github.io/SPCK-JSB_68/html/thank_you.html">
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-warning btn-lg">Gửi</button>
+                </div>
+            </form>
+        </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+      <!--! Footer -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <p class="text-center text-body-secondary">Portfolio - Mai Ngọc Châu | © 2024</p>
+        </footer>
+      </div>
+    <!--! Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // Repo
+      // Hàm async để fetch và hiển thị repositories
+      async function fetchAndDisplayRepos() {
+            // Lấy phần tử HTML có id 'repo-container' để chứa các repo
+            const repoContainer = document.getElementById('repo-container');
+
+            // Fetch dữ liệu từ GitHub API và chuyển đổi sang định dạng JSON
+            const repos = await fetch(`https://api.github.com/users/MaiNgocChau9/repos`).then(response => response.json());
+
+            // Duyệt qua từng repo trong danh sách nhận được từ API
+            repos.forEach(repo => {
+                // Tạo một phần tử <div> mới để chứa thông tin repo
+                const repoDiv = document.createElement('div');
+                // Thêm class 'repo' vào phần tử <div> vừa tạo
+                repoDiv.classList.add('repo');
+                
+                // Chèn nội dung HTML cho từng repo, bao gồm:
+                // - Link đến repo trên GitHub
+                // - Mô tả của repo hoặc hiển thị 'Không có mô tả' nếu không có
+                // - Hiển thị ngôn ngữ lập trình sử dụng trong repo
+                repoDiv.innerHTML = `
+                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                    <p>${repo.description || 'Không có mô tả'}</p>
+                    <div>
+                        <span>🛠️ ${repo.language || 'N/A'}</span>
+                    </div>
+                `;
+                
+                // Thêm phần tử <div> của repo vào bên trong 'repo-container'
+                repoContainer.appendChild(repoDiv);
+            });
+        }
+        fetchAndDisplayRepos();
+    </script>
+    <a href="https://www.canva.com/design/DAGWmnlN5Ag/A0IBAE8bEfOuJuJGHfJ-3Q/edit?utm_content=DAGWmnlN5Ag&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva</a>
 </body>
 </html>
