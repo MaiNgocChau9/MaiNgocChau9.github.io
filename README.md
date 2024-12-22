@@ -9,4 +9,4 @@
                                                               
 ```
 
-https://www.canva.com/design/DAGYwzkRW_I/YVEjiRPKS3MSVtxE_LMv0w/edit?utm_content=DAGYwzkRW_I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Link web: https://maingocchau9.github.io/SPCK-JSB_68/
